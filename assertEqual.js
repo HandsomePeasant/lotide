@@ -11,3 +11,5 @@ assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual(10, "10");
 assertEqual(10, "Ten");
+assertEqual("A String", "A String");
+assertEqual("a string", "A String");
