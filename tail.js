@@ -9,8 +9,7 @@ const assertEqual = function(actual, expected) {
 
 // Function for returning all values of an array minus the first
 const tail = function(arr) {
-  const newArr = arr.slice(1);
-  return newArr;
+  return arr.slice(1);
 };
 
 // Test code 1: ensuring the initial array has not been altered
