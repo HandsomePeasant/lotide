@@ -14,7 +14,7 @@ const tail = function(arr) {
     newArr.push(arr[i]);
   }
   return newArr;
-}
+};
 
 // Test code 1: ensuring the initial array has not been altered
 const words = ["Yo Yo", "Lighthouse", "Labs"];
