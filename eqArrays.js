@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
 
 // Function will compare two arrays and return true or false depending on if they are exactly identical
 const eqArrays = function(arr1, arr2) {
-  if (arr1.length != arr2.length) { // Immediately return false if arrays are of different length
+  if (arr1.length !== arr2.length) { // Immediately return false if arrays are of different length
     return false;
   }
 
@@ -19,7 +19,7 @@ const eqArrays = function(arr1, arr2) {
     }
   }
   return true; // If the loop completes, the arrays match and we can return true
-}
+};
 
 // Test code using assertEqual function with various arrays and the expected result -- all test code should return Assertion Passed
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // testing identical arrays
