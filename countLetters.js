@@ -9,9 +9,8 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(str) {
   const result = {};
-  const lowerStr = str.toLowerCase();
 
-  for (let letter of lowerStr) {
+  for (let letter of str) {
     if (letter === " " || letter === "," || letter === "." || letter === "'") {
       continue;
     } else if (result[letter]) {
@@ -27,7 +26,7 @@ const countLetters = function(str) {
 
 
 const test = countLetters("I'm testing, and stuff.");
-assertEqual(test.i, 2);
+assertEqual(test.i, 2); // Should fail as count is case-sensitive
 assertEqual(test["'"], undefined);
 assertEqual(test[" "], undefined);
 assertEqual(test.t, 3);
