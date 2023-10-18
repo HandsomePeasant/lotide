@@ -12,12 +12,16 @@ const eqArrays = function(arr1, arr2) {
   return true; // If the loop completes, the arrays match and we can return true
 };
 
-// Function will print true or false to console depending on the result returned by the eqArrays function
+// Function will print pass or fail message to console depending on the result returned by the eqArrays function
 const assertArraysEqual = function(arr1, arr2) {
-  console.log(eqArrays(arr1, arr2));
+  if (eqArrays(arr1, arr2) === true) {
+    console.log(`✅✅✅ Assertion Passed: arrays are identical`)
+  } else {
+    console.log(`🛑🛑🛑 Assertion Failed: arrays are NOT identical`);
+  }
 };
 
 // Test code
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // Identical arrays, should print true
-assertArraysEqual(["1", "2", "3"], [1, 2, 3]); // Arrays with the same elements in different types, should print false
-assertArraysEqual([1, 2, 3], [1, 2, 3, 4]); // Arrays of different length, should print false
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // Identical arrays, should pass
+assertArraysEqual(["1", "2", "3"], [1, 2, 3]); // Arrays with the same elements in different types, should fail
+assertArraysEqual([1, 2, 3], [1, 2, 3, 4]); // Arrays of different length, should fail
