@@ -29,6 +29,7 @@ const without = function(source, itemsToRemove) {
     for (let y = 0; y < itemsToRemove.length; y++) {
       if (source[x] === itemsToRemove[y]) {
         addVal = false;
+        break;
       }
     }
     if (addVal) {
