@@ -1,12 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-
 const countLetters = function(str) {
   const result = {};
 
@@ -23,10 +14,4 @@ const countLetters = function(str) {
   return result;
 };
 
-
-
-const test = countLetters("I'm testing, and stuff.");
-assertEqual(test.i, 2); // Should fail as count is case-sensitive
-assertEqual(test["'"], undefined);
-assertEqual(test[" "], undefined);
-assertEqual(test.t, 3);
+module.exports = countLetters;
