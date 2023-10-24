@@ -1,4 +1,5 @@
-// Function will accept two arrays and return a third that includes all elements of source NOT included in itemsToRemove
+// Function will accept two arrays and return a third that includes
+// all elements of source NOT included in itemsToRemove
 const without = function(source, itemsToRemove) {
   const result = [];
   for (let x = 0; x < source.length; x++) {
