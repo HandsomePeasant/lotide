@@ -1,3 +1,4 @@
+// returns all indices where each character in a string is found
 const letterPositions = function(sentence) {
   const result = {};
   let counter = 0;
