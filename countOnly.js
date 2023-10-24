@@ -1,3 +1,5 @@
+// receives an array of data, and an object that determines which items
+// in the array will be counted
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
 
